@@ -1,0 +1,40 @@
+body {
+  padding: 0;
+  margin: -21px 0px 0px 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.editor-and-preview {
+  display: flex;
+  .editor-container {
+    background-color: #DDD;
+    padding: 10px 10px 10px 50px;
+  }
+  .preview-container {
+    padding: 10px;
+  }
+}
+
+.editor {
+  // position:absolute;
+  // left: 100px;
+  // top: 50px;
+}
+
+.preview {
+}
+
+.CodeMirror {
+  height: 500px;
+}
+.CodeMirror-scroll {
+  // height: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}

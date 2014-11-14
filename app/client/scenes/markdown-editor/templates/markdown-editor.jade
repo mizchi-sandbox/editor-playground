@@ -1,0 +1,19 @@
+.main
+  header
+    h1 MarkdownEditor
+    
+  button(onClick=onClickTogglePreview) showPreviwe
+  .editor-and-preview
+    .editor-container(
+      style= {width: (showPreview ? '50%' : '100%')}
+    )
+      .editor
+        textarea(ref='editor')
+    if showPreview
+      .preview-container(
+        style= {width: (showPreview ? '50%' : '100%')}
+      )
+        .preview
+          .markdown-content(
+            dangerouslySetInnerHTML={ __html: html }
+          )
